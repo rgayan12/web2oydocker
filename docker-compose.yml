@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web2py:
+    image: ox-web2py-image
+    ports:
+      - "8000:8000"
+    environment:
+      - WEB2PY_ADMIN_PASSWORD=your_admin_password
+    volumes:
+       - ./testWeb2App:/web2py/applications/testWeb2App
